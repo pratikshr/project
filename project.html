@@ -68,7 +68,7 @@ img {
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self movement ??? a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geek. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it.</p>
+<p>Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self movement - a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geek. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it.</p>
 <p>In this project, we will use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants to predict the manner in which they did the exercise.</p>
 </div>
 <div id="data-preprocessing" class="section level2">
@@ -204,7 +204,7 @@ accuracy</code></pre>
 <pre class="r"><code>oose &lt;- 1 - as.numeric(confusionMatrix(testData$classe, predictRf)$overall[1])
 oose</code></pre>
 <pre><code>## [1] 0.006966865</code></pre>
-<p>So, the estimated accuracy of the model is 99.42% and the estimated out-of-sample error is 0.58%.</p>
+<p>So, the estimated accuracy of the model is 99% and the estimated out-of-sample error is 0.7%.</p>
 </div>
 <div id="predicting-for-test-data-set" class="section level2">
 <h2>Predicting for Test Data Set</h2>
